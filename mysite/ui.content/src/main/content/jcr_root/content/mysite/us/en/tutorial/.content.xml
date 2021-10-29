@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-10-28T11:43:25.894-06:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/mysite/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Tutorial"
+        sling:resourceType="mysite/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="mysite/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="mysite/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/container"
+                    layout="responsiveGrid">
+                    <teaser
+                        jcr:created="{Date}2021-10-28T11:41:08.563-06:00"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2021-10-28T11:42:23.855-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="This is the Title of the Teaser"
+                        sling:resourceType="mysite/components/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/wknd/en/magazine/skitouring/Skitouring6Sjoeberg.JPG"
+                        pretitle="Pretitle goes here"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/mysite/us/en/tutorial"
+                                text="Tutorial"/>
+                        </actions>
+                    </teaser>
+                    <title
+                        jcr:created="{Date}2021-10-28T11:42:49.008-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-10-28T11:42:49.008-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="mysite/components/title"/>
+                    <button
+                        jcr:created="{Date}2021-10-28T11:42:54.952-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-10-28T11:43:25.889-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Click me"
+                        sling:resourceType="mysite/components/button"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+    <component-basics/>
+    <client-side-libraries/>
+</jcr:root>

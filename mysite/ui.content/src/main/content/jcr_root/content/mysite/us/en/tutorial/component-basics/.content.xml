@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-10-28T10:58:05.725-06:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/mysite/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Component Basics"
+        sling:resourceType="mysite/components/page"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="mysite/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="mysite/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:lastModified="{Date}2021-10-27T16:27:34.184-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/container"
+                    layout="responsiveGrid">
+                    <text
+                        jcr:created="{Date}2021-10-27T15:24:19.597-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-10-27T16:29:08.531-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="mysite/components/text"
+                        text="&lt;ul>&#xd;&#xa;&lt;li>Server side templating language to render content&lt;/li>&#xd;&#xa;&lt;li>The HTL script lives inside the ui.apps module&lt;/li>&#xd;&#xa;&lt;li>ui.apps tree maps the apps folder in CRX/de&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;p>To reference a dialog property --&amp;gt;&amp;nbsp;${properties.title}&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                    <title
+                        jcr:created="{Date}2021-10-27T15:53:35.200-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-10-27T16:27:27.679-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Sling Models"
+                        sling:resourceType="mysite/components/title"
+                        type="h2"/>
+                    <text_1432020939
+                        jcr:created="{Date}2021-10-27T15:53:52.852-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-10-27T16:14:24.847-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="mysite/components/text"
+                        text="&lt;ul>&#xd;&#xa;&lt;li>Sling models are POJOs&lt;/li>&#xd;&#xa;&lt;li>Sling models make it easy to map JCR properties to Java variables.&lt;/li>&#xd;&#xa;&lt;li>We should implement Business Logic using Sling models.&lt;/li>&#xd;&#xa;&lt;li>Models are part of the core module.&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;p>data-sly-use.model --&amp;gt; sets a variable model&lt;/p>&#xd;&#xa;&lt;p>data-sly-use.model=&amp;quot;com.mysite.core.models.HelloWorldModel&amp;quot;&lt;br>&#xd;&#xa;&lt;br>&#xd;&#xa;If statement --&amp;gt;&amp;nbsp;data-sly-test&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Models are anotation driven&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>@Model --&amp;gt; classes&lt;/li>&#xd;&#xa;&lt;li>@PostConstruct --&amp;gt; first method called after initialized&lt;/li>&#xd;&#xa;&lt;li>@ValueMapValue --&amp;gt; to map JCR variables (they should have the same name as in JCR)&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;p>When referencing a get method we get rid of the get&amp;nbsp;&lt;br>&#xd;&#xa;&lt;br>&#xd;&#xa;getTitle() becomes --&amp;gt; ${model.title}&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                    <title_copy
+                        jcr:created="{Date}2021-10-27T15:53:35.200-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-10-27T16:27:18.947-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Client Side Libraries"
+                        sling:resourceType="mysite/components/title"
+                        type="h2"/>
+                    <text_1432020939_copy
+                        jcr:created="{Date}2021-10-27T15:53:52.852-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-10-27T16:51:08.457-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="mysite/components/text"
+                        text="&lt;ul>&#xd;&#xa;&lt;li>Way to organize CSS and JS&lt;/li>&#xd;&#xa;&lt;li>Code found under ui.apps folder&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
+                        textIsRich="true"/>
+                    <separator
+                        jcr:created="{Date}2021-10-27T16:23:21.278-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-10-27T16:23:21.278-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="mysite/components/separator"/>
+                    <helloworld
+                        jcr:created="{Date}2021-10-27T15:23:36.787-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-10-27T16:15:54.829-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="mysite/components/helloworld"
+                        text="Hello World 1"
+                        title="Hallo"/>
+                    <helloworld_924817320
+                        jcr:created="{Date}2021-10-27T15:23:42.894-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-10-27T15:24:00.288-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="mysite/components/helloworld"
+                        text="Hello World 2"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
